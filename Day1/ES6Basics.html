@@ -39,10 +39,21 @@
         // console.log(player);
 
         //Destructuring -Arrays & Objects
-        var cars=["BMW","Audi","Toyota"];
-        var [car1,car2,car3]=cars;
+        // var cars=["BMW","Audi","Toyota"];
+        // var [car1,car2,car3]=cars;
+        // var [car1,car2,car3]=["BMW","Audi","Toyota"];
+        // var[car1,,car3]=["BMW","Audi","Toyota"];
+        // var[first,second,,third="Unkown"]=["BMW","Audi","Toyota"];
+        // console.log(first,second,third);
 
 
+        var person={
+            name:"gaurav",
+            age:20,
+            gender:"male"
+        };
+        var{name,age,gender}=person;
+        console.log(name,age,gender);  // we didnt need to do person.name, person.age, person.gender  // destructuring in object
     </script>
 </body>
 </html>
