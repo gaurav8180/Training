@@ -7,10 +7,29 @@
 </head>
 <body>
     <script>
-        if(true){
-            let x=100;
-        }
-        console.log(x);
+        // if(true){
+        //     // let x=100;
+        //     // let x=200;  //error as x is already declared but only in let varibale hoisting
+        //     var x=100;
+        //     var x=1000; //error as x is already declared but only in var hoisting
+        // }
+        // console.log(x);
+
+        // const player={
+        //     name:"gaurav",
+        //     age:20,
+        //     gender:"male"
+        // }
+        // player.age=21; // we can change the value of age but we cannnot redefined the player{}
+        // console.log(player);
+
+        //spread operator-Object & array
+
+        var cars=["BMW","Audi","Toyota"];
+        var moreCars=["TATA","Honda","Fiat"];
+        var carsAndMoreCars=[...cars,...moreCars];
+        console.log(carsAndMoreCars);
+        
     </script>
 </body>
 </html>
