@@ -47,13 +47,42 @@
         // console.log(first,second,third);
 
 
-        var person={
-            name:"gaurav",
-            age:20,
-            gender:"male"
-        };
-        var{name,age,gender}=person;
-        console.log(name,age,gender);  // we didnt need to do person.name, person.age, person.gender  // destructuring in object
+        // var person={
+        //     name:"gaurav",
+        //     age:20,
+        //     gender:"male"
+        // };
+        // var{name,age,gender}=person;
+        // console.log(name,age,gender);  // we didnt need to do person.name, person.age, person.gender  // destructuring in object
+
+        // function getPerson(person){
+        //     console.log(name,age,gender);
+        // }
+        // getPerson();
+
+
+        // var player={
+        //     issSeed:100,
+        //     details:{
+        //         name:"gaurav",
+        //         age:20,
+        //         gender:"male"
+        //     }
+        // }
+
+        // var{details:{name,age,gender},issSeed}=player;
+        // console.log(name,age,gender,issSeed);
+
+
+        // Asynchronous programming
+
+        console.log("Started..");
+        setTimeout(function(){
+            console.log("printed after 2 seconds");  //settimeout is web api which provide asynchroous nature to javascript  //enven if it will 0 then also it will be asynchronous
+        },2000);
+        console.log("Ended..");
+
+        // --> stack--> web apis--> taskqueue(only if stack is empty)--> event loop--> execution
     </script>
 </body>
 </html>
