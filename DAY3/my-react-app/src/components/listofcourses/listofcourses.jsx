@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Course from "../course/course.component";
 
-export default class ListOfCourses extends Component {
-  courses = [
+const ListOfCourses = () => {
+  const courses = [
     {
       id: "1",
       title: "React",
@@ -60,13 +60,13 @@ export default class ListOfCourses extends Component {
     },
   ];
 
-  render() {
-    return (
-      <div>
-        {this.courses.map(course => (
-          <Course coursedetails={course} />
-        ))}
-      </div>
-    );
-  }
-} 
+  return (
+    <div className="row">
+      {courses.map(course => (
+        <Course coursedetails={course} key={course.id} />
+      ))}
+    </div>
+  );
+};
+
+export default ListOfCourses;
